@@ -1,3 +1,23 @@
 body{
     background-color: rgb(37, 233, 233);
 }
+
+#FDM{
+    color:white;
+}
+
+#fancy{
+    font-family: sans-serif;
+
+}
+
+#dig_hev{
+    color:white;
+
+    font-family: sans-serif;
+}
+
+#quote{
+    color:white;
+    font-family: sans-serif;
+}
