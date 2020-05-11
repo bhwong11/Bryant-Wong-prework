@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../first_lesson_stuff"
+		},
+		{
+			"name": "test-1",
+			"path": "../../../test-1"
+		},
+		{
+			"path": "../../../first_lesson_stuff/test_rep"
+		},
+		{
+			"path": "../../../../Downloads/unsolved 2/RelativePaths_1"
+		},
+		{
+			"path": "../../../../Downloads/unsolved 2/RelativePaths_2"
+		},
+		{
+			"path": "../../../../Downloads/unsolved 2/RelativePaths_3"
+		},
+		{
+			"path": "../../../../Downloads/unsolved 2/RelativePaths_4"
+		},
+		{
+			"path": "../../../../Downloads/unsolved 2/RelativePaths_WorkingExample"
+		}
+	],
+	"settings": {}
+}
