@@ -1,0 +1,30 @@
+#sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+
+  #nav{
+      float:right;
+  }
+
+  #back{
+      background-color: gray;
+  }
+
+  #body{
+      margin: 30px;
+      background-color: white;
+  }
+
+  #nav1{
+      background-color: gray;
+  }
+
+  #nav2{
+    background-color: red;
+}
