@@ -17,14 +17,15 @@ word_guess.innerText = dash_length;
 
 const Guess_Function = function(event){
     input_key = event.key;
-    for(let i = 0; i< dash_length.length;i++){
-        if(dash_length[i] == '-'){
-            dash_length[i] = input_key;
+    let new_guess = dash_length.split("");
+    for(let i = 0; i< new_guess.length;i++){
+        if(new_guess[i] == '-'){
+            new_guess[i] = input_key;
         }
         else{dash_length[i] = "-"};
     }
 
-    word_guess.innerText = dash_length;
+    word_guess.innerText = new_guess;
 }
 
 /*for(let i = 0; i< dash_length.length;i++){
