@@ -18,23 +18,28 @@ let randomNum = Math.floor(Math.random() * 5);
 let word_present = word_bank[randomNum];
 
 for (let i= 0;i<word_present.length; i++){
-    dash_length = dash_length + "-";
+    dash_length = dash_length + "_ ";
 };
 
 let word_present_split = word_present.split("");
 
 word_guess.innerText = dash_length;
 
-let new_guess = dash_length.split("");
+let new_guess = dash_length.split(" ");
 
-let new_word_list = dash_length.split("");
+let new_word_list = dash_length.split(" ");
 
 let wrong_guesses = [];
 
 let remain_guesses = 12;
 
+let input_count = 0;
+
+let wins_v = 0;
+
 const Guess_Function = function(event){
     input_key = event.key;
+    if(input_count > 0){
     if (word_present_split.includes(input_key) == true){
     for (let i = 0; i<word_present.length;i++){
         if(input_key == word_present[i]){
@@ -46,7 +51,7 @@ const Guess_Function = function(event){
         }
     }
     else{
-        wrong_guesses += input_key + ", ";
+        wrong_guesses += input_key + " ";
         remain_guesses += -1;
     }
         
@@ -61,6 +66,9 @@ const Guess_Function = function(event){
     word_guess.innerText = new_word_list;
     r_guess_num.innerText = remain_guesses;
 
+
+
+// check if loss//
     if (remain_guesses <= 0){
         alert('loss');
         //reset
@@ -97,8 +105,8 @@ r_guess_num.innerText = remain_guesses;
 
 
 
+//check if won//
     let win_letter = 0;
-    let wins_v = 0;
     for (var i = 0; i < word_present_split.length; ++i) {
         if (word_present_split[i] == new_word_list[i]&&remain_guesses >0) {
             win_letter+=1
@@ -106,36 +114,41 @@ r_guess_num.innerText = remain_guesses;
       }
     if (win_letter == word_present_split.length){
         alert('win');
-        wins_v += 1;
                 //reset
-                let dash_length = '';
+                dash_length = '';
 
-                const randomNum = Math.floor(Math.random() * 5); 
+                randomNum = Math.floor(Math.random() * 5); 
                 
-                let word_present = word_bank[randomNum];
+                word_present = word_bank[randomNum];
                 
                 for (let i= 0;i<word_present.length; i++){
                     dash_length = dash_length + "-";
                 };
                 
-                let word_present_split = word_present.split("");
+                word_present_split = word_present.split("");
                 
                 word_guess.innerText = dash_length;
                 
-                let new_guess = dash_length.split("");
+                new_guess = dash_length.split("");
                 
-                let new_word_list = dash_length.split("");
+                new_word_list = dash_length.split("");
                 
-                let wrong_guesses = [];
+                wrong_guesses = [];
                 
-                let remain_guesses = 12;
+                remain_guesses = 12;
 
-                let win_letter = 0;
+                win_letter = 0;
                 //reset
+                wins_v += 1;
 
     }
     wins_n.innerText = wins_v;
+    }
+    else{
 
+    input_count += 1;
+    alert('Game Started! Press keys to input guesses');
+};
 
 }
 
