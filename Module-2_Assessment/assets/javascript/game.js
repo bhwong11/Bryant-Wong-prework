@@ -13,7 +13,7 @@ const r_guess_num = document.querySelector('#remaining_guesses_content');
 
 let dash_length = '';
 
-const randomNum = Math.floor(Math.random() * 5); 
+let randomNum = Math.floor(Math.random() * 5); 
 
 let word_present = word_bank[randomNum];
 
