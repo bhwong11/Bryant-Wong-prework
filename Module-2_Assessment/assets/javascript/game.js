@@ -147,6 +147,8 @@ r_guess_num.innerText = remain_guesses;
 
     }
     wins_n.innerText = wins_v;
+    r_guess_num.innerText = remain_guesses;
+    wrong_letters.innerText = wrong_guesses;
     }
     else{
 
