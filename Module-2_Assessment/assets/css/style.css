@@ -1,0 +1,32 @@
+#current_word_guess{
+    background-color: aquamarine;
+    padding: 20px;
+}
+#press_any_key{
+    padding: 10px
+}
+
+img {
+    width: 100%;
+    padding: 10px;
+    height: 200%;
+  }
+
+body{
+    background-color: aquamarine;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main_content_col1{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 180px;
+}
+
+#current_word{
+    font-size: 14px;
+}
+
+#title{
+    font-size: 40px;
+}
