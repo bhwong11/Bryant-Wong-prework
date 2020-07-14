@@ -75,7 +75,7 @@ const Guess_Function = function(event){
 
 
 // check if loss//
-    if (remain_guesses < 0 || remain_guesses == 0){
+    if (remain_guesses < 1){
         //reset
         dash_length = '';
 
@@ -101,9 +101,12 @@ remain_guesses = 12;
 
 win_letter = 0;
 
+tree_num = randomNum;
+
 wrong_letters.innerText = wrong_guesses;
 word_guess.innerText = new_word_list;
 r_guess_num.innerText = remain_guesses;
+tree_image.innerHTML = '<img src = "/Users/Bryant1/Desktop/Bryant-Wong-prework/Module-2_Assessment/assets/images/tree' + randomNum + '.jpg">'
 
 //reset
     };
@@ -142,6 +145,9 @@ r_guess_num.innerText = remain_guesses;
                 remain_guesses = 12;
 
                 win_letter = 0;
+
+                tree_num = randomNum;
+
                 //reset
                 wins_v += 1;
 
@@ -149,6 +155,7 @@ r_guess_num.innerText = remain_guesses;
     wins_n.innerText = wins_v;
     r_guess_num.innerText = remain_guesses;
     wrong_letters.innerText = wrong_guesses;
+    tree_image.innerHTML = '<img src = "/Users/Bryant1/Desktop/Bryant-Wong-prework/Module-2_Assessment/assets/images/tree' + randomNum + '.jpg">'
     }
     else{
 
